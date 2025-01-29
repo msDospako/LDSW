@@ -5,7 +5,7 @@
     <meta charset="UTF-8">                                      <!-- Codificacion de caracteres para que nos e pierdan los caracteres especiales (ñ, tildes, etc)  -->  
     <meta name="title" content="Mi primera pagina WEB">         <!--Nombre que parecera en la pestaña del explorador-->
     <meta name="description" content="Descripción de la WEB">   <!--Meta data para la descripcion breve de la pagina web en buscadores (snippet) -->
-    <!--<link href="estilos.css" rel="stylesheet">-->
+    <link href="estilos.css" rel="stylesheet">
     <style>
         header{background-color:rgba(107, 105, 105, 0.705);}  /* Código CSS para colores en la cabecera del texto de titulo  */
         footer{background-color:rgba(107, 105, 105, 0.705);}   /* Código CSS para colores en el footer de la pagina  */
@@ -17,13 +17,55 @@
         <h1>Tus aportes</h1>
         </center>
     </header>
+        <center>
+        <h3> Tus historias son muy importantes </h3>
+        <p>Ayudanos a mejorar, tus mensajes contribuyen a lograr un mejor desarrollo</p>
+        </center>
+            <form action="#" method="post">
+            <ul style="list-style: none;">
+                <li>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="user_name" />
+                </li>
+                <li>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="user_lastname" />
+                </li>
+                <li>
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad" name="user_age" />
+                </li>
+                <li>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="user_city" />
+                </li>
+                <li>
+                    <label for="pais">Ciudad:</label>
+                    <input type="text" id="pais" name="user_country" />
+                </li>
+                <li>
+                    <label for="codigo">C.P.:</label>
+                    <input type="text" id="codigo" name="user_cp" />
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_mail" />
+                </li>
+                <li>
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Enviar datos</button>
+            </ul>
+            </form>
+    <br>
     <center>
-    <h3> Tus historias son muy importantes </h3>
-    <p>Ayudanos a mejorar, tus mensajes contribuyen a lograr un mejor desarrollo</p>
     <a href="#"> Servicio especiales@hotmail.com</a>
     </center>
-    <footer>
-        <br>                                                    <!-- Pie de pagina -->
+    <br>
+    <footer>                                                    <!-- Pie de pagina -->
+        <br>
         <center>
         <font size="4">                                                    
         <a href="index.html"> Inicio</a>
