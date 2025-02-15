@@ -58,6 +58,25 @@
     }
     .desordenado {
         list-style: none;
+        color: brown;
+    }
+    #destacado {
+        color: black;
+        font-size: 20px;
+    }
+    
+    .historia {
+        background-color: #978b8b;
+        color: black;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    #barra {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
     }
 </style>
 <body>
@@ -71,25 +90,25 @@
             <br></br>
         </center>
     </header>
-    <h2>Menu</h2>
+    <h2 id="barra">MENU</h2>
     <nav class="desordenado">
         <ul style="list-style: none;">                        
             <li><a href="Historia.html">Historia</a></li>   
             <li><a href="Atractivos.html">Nuestros atractivos </a></li>
             <li><a href="Testimonios.html">Testimonios</a></li>
             <li><a href="Reserva.html">Reserva con nosotros</a></li>
-            <li><a href="https://incarail.com/es?gad_source=1&gclid=Cj0KCQiAkoe9BhDYARIsAH85cDP6pWMEGh6dR-XGozUKxPjYZIyGfkFGqhGql3HNSFZHFCQSRkY-BlwaAmOuEALw_wcB">Inca Rail</a></li>
+            <li id="externo"><a href="https://incarail.com/es?gad_source=1&gclid=Cj0KCQiAkoe9BhDYARIsAH85cDP6pWMEGh6dR-XGozUKxPjYZIyGfkFGqhGql3HNSFZHFCQSRkY-BlwaAmOuEALw_wcB">Inca Rail</a></li>
 
         </ul>
     </nav>
     <section>
-        <article>                                             
+        <article class="historia">                                             
             <center>
             <h2>Nuestro lugar destacado de la semana</h2>
                 <H3>Valle del Colca, Arequipa</H3>
                 <img src="https://www.viajejet.com/wp-content/viajes/Valle-del-Colca.jpg" alt="Valle del Colca" width="500" height="300">
             <strong>
-                <p> Sin duda, el Valle del Colca es un extenso valle de tierras fértiles que bordea el río Colca. También es conocido como el Valle del Fuego.
+                <p id="destacado"> Sin duda, el Valle del Colca es un extenso valle de tierras fértiles que bordea el río Colca. También es conocido como el Valle del Fuego.
                     Es otro de los Lugares Turisticos del Perú; pues aquí están ubicados el cañón del Colca (uno de los cañones más profundos del mundo), los baños Termales de la Calera y el famoso mirador la Cruz del Cóndor, donde podrás apreciar el vuelo de los cóndores. Visitanos
                     </p>
 
