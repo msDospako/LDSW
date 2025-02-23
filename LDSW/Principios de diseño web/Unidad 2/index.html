@@ -5,80 +5,11 @@
     <meta charset="UTF-8">                                       
     <meta name="title" content="Machupicchu">         
     <meta name="description" content="Descripción de la WEB"> 
+    <link href="estilos.css" rel="stylesheet">
 </head>
-<style type="text/css"> 
-    body {
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-    }
-    nav {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-    }
-    nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-    }
-    nav ul li {
-        display: inline;
-    }
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 20px;
-        display: inline-block;
-    }
-    nav ul li a:hover {
-        background-color: #555;
-    }
-    section {
-        padding: 20px;
-    }
-    article {
-        margin-bottom: 20px;
-    }
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-    .desordenado {
-        list-style: none;
-        color: brown;
-    }
-    #destacado {
-        color: black;
-        font-size: 20px;
-    }
-    
-    .historia {
-        background-color: #978b8b;
-        color: black;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 10px;
-    }
-    #barra {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-    }
-</style>
+    <style type="text/css"> 
+
+    </style>
 <body>
     <header>
         <center>
@@ -90,18 +21,19 @@
             <br></br>
         </center>
     </header>
-    <h2 id="barra">MENU</h2>
-    <nav class="desordenado">
-        <ul style="list-style: none;">                        
-            <li><a href="Historia.html">Historia</a></li>   
-            <li><a href="Atractivos.html">Nuestros atractivos </a></li>
-            <li><a href="Testimonios.html">Testimonios</a></li>
-            <li><a href="Reserva.html">Reserva con nosotros</a></li>
-            <li id="externo"><a href="https://incarail.com/es?gad_source=1&gclid=Cj0KCQiAkoe9BhDYARIsAH85cDP6pWMEGh6dR-XGozUKxPjYZIyGfkFGqhGql3HNSFZHFCQSRkY-BlwaAmOuEALw_wcB">Inca Rail</a></li>
-
-        </ul>
-    </nav>
-    <section>
+    <div>
+        <h2 id="barra">MENU</h2>
+            <nav class="desordenado">
+                <ul style="list-style: none;">                        
+                    <li><a href="Historia.html">Historia</a></li>   
+                    <li><a href="Atractivos.html">Nuestros atractivos </a></li>
+                    <li><a href="Testimonios.html">Testimonios</a></li>
+                    <li><a href="Reserva.html">Reserva con nosotros</a></li>
+                    <li id="externo"><a href="https://incarail.com/es?gad_source=1&gclid=Cj0KCQiAkoe9BhDYARIsAH85cDP6pWMEGh6dR-XGozUKxPjYZIyGfkFGqhGql3HNSFZHFCQSRkY-BlwaAmOuEALw_wcB">Inca Rail</a></li>
+                </ul>
+            </nav>
+    </div>
+    <div>
         <article class="historia">                                             
             <center>
             <h2>Nuestro lugar destacado de la semana</h2>
@@ -115,7 +47,7 @@
             </strong>
             </center>
         </article>
-    </section>
+    </div>
 
     <footer>                                                    <!-- Pie de pagina -->
         <h3>Contactanos</h3>
