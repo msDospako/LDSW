@@ -4,11 +4,11 @@
         <title>Reserva</title>
         <meta charset="UTF-8">                                       
         <meta name="title" content="Machupicchu">         
-        <meta name="description" content="Descripción de la WEB">   
+        <meta name="description" content="Descripción de la WEB">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
         <link href="estilos.css" rel="stylesheet">
         <style>
-            header{background-color:rgba(228, 225, 225, 0.705);}  
-            footer{background-color:rgba(236, 180, 107, 0.705);}   
+
         </style>
     </head>
 <body>
@@ -21,44 +21,46 @@
         <h3> Te apoyamos en el viaje de tus sueños </h3>
         <p>Ayudanos a darte el mejor servicios, ejanos tus necesidades en las preferencias de tu viaje</p>
         </center>
-            <form action="#" method="post">
-            <ul style="list-style: none;">
-                <li>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="user_name" />
-                </li>
-                <li>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="user_lastname" />
-                </li>
-                <li>
-                    <label for="edad">Edad:</label>
-                    <input type="text" id="edad" name="user_age" />
-                </li>
-                <li>
-                    <label for="ciudad">Ciudad:</label>
-                    <input type="text" id="ciudad" name="user_city" />
-                </li>
-                <li>
-                    <label for="noches">Noches</label>
-                    <input type="text" id="pais" name="noches" />
-                </li>
-                <li>
-                    <label for="habitaciones">Habitaciones:</label>
-                    <input type="text" id="codigo" name="habitaciones" />
-                </li>
-                <li>
-                    <label for="mail">Correo electrónico:</label>
-                    <input type="email" id="mail" name="user_mail" />
-                </li>
-                <li>
-                    <label for="msg">Preferencias de tu viaje:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Enviar datos</button>
-            </ul>
-            </form>
+            <div class="formulario">  
+                <form id="form"  action="#" method="post">
+                <ul style="list-style: none;">
+                    <li>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="user_name" />
+                    </li>
+                    <li>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="user_lastname" />
+                    </li>
+                    <li>
+                        <label for="edad">Edad:</label>
+                        <input type="text" id="edad" name="user_age" />
+                    </li>
+                    <li>
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="user_city" />
+                    </li>
+                    <li>
+                        <label for="noches">Noches:</label>
+                        <input type="text" id="pais" name="noches" />
+                    </li>
+                    <li>
+                        <label for="habitaciones">Habitaciones: </label>
+                        <input type="text" id="codigo" name="habitaciones" />
+                    </li>
+                    <li>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail" />
+                    </li>
+                    <li>
+                        <label for="msg">Preferencias de tu viaje:</label>
+                        <input type= "mensage" id="msg" name="user_message"></input>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Enviar datos</button>
+                </ul>
+                </form>
+            </div>
     <br>
     <center>
     <a href="#"> Servicio especiales@hotmail.com</a>
