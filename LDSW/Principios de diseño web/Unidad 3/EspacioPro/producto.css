@@ -450,9 +450,12 @@
 	right: 4.12%;
 	left: 4.12%;
 	border-radius: 15px;
-	border: 1px solid #000;
 	box-sizing: border-box;
 	height: 549px;
+    background-image: url(https://img.freepik.com/foto-gratis/vida-muerta-silla-oficina-interior_23-2151108733.jpg?t=st=1741827850~exp=1741831450~hmac=a86410198dc1c2260b61c9e9c518e90625d9ccfc63cdbfe0b9d213c067d8e3a8&w=1060);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .foto-1 {
 	position: absolute;
@@ -461,9 +464,14 @@
 	right: 69.33%;
 	left: 4.12%;
 	border-radius: 15px;
-	border: 1px solid #000;
+
 	box-sizing: border-box;
 	height: 223px;
+    background-image: url(https://img.freepik.com/foto-gratis/vida-muerta-silla-oficina-interior_23-2151108699.jpg?t=st=1741827425~exp=1741831025~hmac=ef30558fee679bf5a950ff9e8c8de2628d62b16bf313d1d71d78b3e10dacb07b&w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 .foto-2 {
 	position: absolute;
@@ -472,9 +480,12 @@
 	right: 36.72%;
 	left: 36.73%;
 	border-radius: 15px;
-	border: 1px solid #000;
 	box-sizing: border-box;
 	height: 223px;
+    background-image: url(https://img.freepik.com/foto-gratis/vida-muerta-silla-oficina-interior_23-2151108716.jpg?t=st=1741827679~exp=1741831279~hmac=36cfe3dc937add760d8afebe6c598c5fef45258b4f31da4f1e779c80cf0a41ce&w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .foto-3 {
 	position: absolute;
@@ -483,9 +494,12 @@
 	right: 4.12%;
 	left: 69.33%;
 	border-radius: 15px;
-	border: 1px solid #000;
 	box-sizing: border-box;
 	height: 223px;
+    background-image: url(https://img.freepik.com/foto-gratis/vida-muerta-silla-oficina-interior_23-2151108700.jpg?t=st=1741827760~exp=1741831360~hmac=c82812f7c539952d39887b8e2a3757225c224a193832fb5d2d2e7f178d62918d&w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .principal-parent {
 	position: absolute;
@@ -493,7 +507,6 @@
 	top: 645px;
 	right: 52.04%;
 	left: 7.24%;
-	filter: blur(5px);
 	border-radius: 15px;
 	border: 3px solid #818181;
 	box-sizing: border-box;
@@ -504,7 +517,7 @@
 	width: 100%;
 	top: 0px;
 	left: 0%;
-	font-size: 32px;
+	font-size: 45px;
 	letter-spacing: 0.01em;
 	line-height: 42px;
 	display: flex;
@@ -518,12 +531,13 @@
 	top: 92px;
 	left: 0.46%;
 	letter-spacing: 0.01em;
-	line-height: 42px;
+	line-height: 62px;
 	text-transform: uppercase;
 	font-weight: 600;
 	display: flex;
 	align-items: center;
 	height: 67.4px;
+    font-size: 30px;
 }
 .right-side-child {
 	position: absolute;
@@ -586,9 +600,7 @@
 	height: 74px;
 	font-size: 32px;
 }
-.descuento-de-30-container1 {
-	width: 100%;
-}
+
 .descuento-de-30-container {
 	position: absolute;
 	width: 41.48%;
@@ -600,6 +612,8 @@
 	display: flex;
 	align-items: center;
 	height: 73.8px;
+    color: #db4444;
+    
 }
 .la-silla-ejecutiva-delta {
 	position: absolute;
@@ -608,33 +622,21 @@
 	left: 0.46%;
 	letter-spacing: -0.01em;
 	line-height: 50px;
-	font-weight: 500;
+	font-weight: medium;
 	font-family: Montserrat;
 	color: rgba(0, 0, 0, 0.8);
 	display: flex;
 	align-items: center;
 	height: 5px;
+    font-size: 20px;
 }
-.div1 {
-	position: absolute;
-	width: 2.45%;
-	top: 777px;
-	left: 4.13%;
-	letter-spacing: 0.01em;
-	line-height: 42px;
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #474747;
-	display: flex;
-	align-items: center;
-	height: 24px;
-}
-.down-arrow-4-icon {
+
+.darrow {
 	position: absolute;
 	width: 2.97%;
 	top: 779.59px;
-	right: 90.12%;
-	left: 6.91%;
+	right: 60.12%;
+	left: 7.91%;
 	max-width: 100%;
 	overflow: hidden;
 	height: 19.3px;
@@ -653,6 +655,20 @@
 	display: flex;
 	align-items: center;
 	height: 26px;
+}
+.qty-number {
+    position: absolute;
+    width: 5.81%;
+    top: 775px;
+    right: 575px;
+    letter-spacing: 0.01em;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    height: 26px;
 }
 .agregar-al-carrito {
 	position: absolute;
@@ -707,7 +723,7 @@
 	font-family: Montserrat;
 }
 .nuestros-clientes {
-	width: 377px;
+	width: 777px;
 	position: relative;
 	letter-spacing: -0.01em;
 	line-height: 50px;
@@ -800,6 +816,7 @@
 	height: 130px;
 }
 .caja-texto-2 {
+    top: 60px;
 	width: 609px;
 	position: relative;
 	background-color: #d9d9d9;
@@ -836,6 +853,7 @@
 	height: 150px;
 }
 .caja-texto-3 {
+    top: 120px;
 	width: 608.8px;
 	position: relative;
 	height: 200px;
@@ -849,7 +867,7 @@
 }
 .caja-texto-gral {
 	position: absolute;
-	width: 33.22%;
+	width: 650px;
 	top: 1645px;
 	right: 8.44%;
 	left: 58.33%;
