@@ -9,7 +9,7 @@ const radio = 20; // Radio de la pelota
 
 function dibujarPelota() {
     ctx.beginPath();
-  ctx.arc(x, y, radio, 0, Math.PI * 2);
+    ctx.arc(x, y, radio, 0, Math.PI * 2);
     ctx.fillStyle = 'red';
     ctx.fill();
     ctx.closePath();
