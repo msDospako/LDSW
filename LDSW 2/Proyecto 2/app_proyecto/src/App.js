@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Component from './component';
+import Component from './Component';
 
 function App() {
   return (
@@ -8,10 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Acceso a plataforma virtual 22 hermanos
+          Acceso al sistema de inventario 22 Hermanos 
         </p>
-
-        <Component />
+        
+        < Component />
       </header>
     </div>
   );
