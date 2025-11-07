@@ -1,0 +1,114 @@
+/* ====== Global ====== */
+html{
+  box-sizing:border-box;                  /* a) */
+}
+*,*::before,*::after{ box-sizing:inherit; }
+
+body{
+    margin:0;
+    padding:0;
+    line-height:1.6;
+    /* b) color, tipografía y tamaño base */
+    color:#2e2e2e;
+    font-size:16px;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+img{ width:300px; height:auto; display:block; }
+
+/* c) vínculos */
+a {
+  color: #FFD700; /* amarillo dorado */
+    text-decoration: none;
+}
+
+a:hover {
+  color: #FFEA00; /* amarillo más claro al pasar el mouse */
+  text-decoration: underline; /* agrega subrayado en hover */
+}
+
+/* d) títulos */
+h1,h2{ margin:0; font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; font-weight:600; }
+h1{ font-size:50px; line-height:1.1; }
+h2{ font-size:25px; }
+
+/* e) contenedor */
+.contenido{
+    width:800px;
+    margin:0 auto;
+    padding:60px 0;                        /* solo arriba/abajo */
+}
+
+/* ====== Header / Perfil ====== */
+header{
+  background:rgb(47,48,97);               /* f) en rgb */
+    color:#F7FFF7;
+    text-align:center;
+}
+
+/* ====== Proyectos ====== */
+.proyectos{
+  background:rgb(255,255,255);            /* f) en rgb (blanco, como en la referencia) */
+}
+.proyectos a{ color:#2F3061; }
+
+.proyectos .btn{
+    color:#F7FFF7;
+    background:#2F3061;
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:4px;
+    display:inline-block;
+    font-weight:600;
+}
+.proyectos .btn:hover{ background:rgba(47,48,97,.8); text-decoration:none; }
+
+.proyecto-item{
+  overflow:hidden;                         /* contiene el float */
+    border-bottom:1px dashed #343434;
+    padding:25px 0;
+}
+
+/* g) imagen a la izquierda como en la imagen */
+.proyecto-item img{
+    float:left;
+    margin-right:20px;
+}
+
+.proyecto-item h3{
+    margin-top:0;
+    margin-bottom:6px;
+}
+
+/* ====== Experiencia laboral ====== */
+.experiencia-laboral{
+  background:rgb(161,198,215);            /* banda azul claro a todo lo ancho */
+}
+
+
+
+/* ====== Footer / Contacto ====== */
+footer{
+    background:#343434;
+    color:#F7FFF7;
+    text-align:center;
+}
+.lista-contacto{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    flex-wrap:wrap;
+}
+.lista-contacto a{
+    padding:15px;
+    display:inline-block;
+    color:#FFD700;
+}
+.lista-contacto a:hover{ color:#FFEA00; text-decoration:underline; }
+
+
