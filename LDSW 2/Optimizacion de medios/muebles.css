@@ -1,0 +1,301 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* HEADER */
+.header {
+    background-color: #111827;
+    color: #fff;
+    padding: 0.75rem 0;
+}
+
+.header__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header__logo h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.header__logo p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* NAVEGACIÓN */
+.nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+    background-color: #facc15;
+    color: #111827;
+}
+
+/* HERO */
+.hero {
+    background-color: #f3f4f6;
+    padding: 2.5rem 0;
+}
+
+.hero__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__texto h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.hero__texto p {
+    margin-bottom: 1rem;
+    max-width: 32rem;
+}
+
+.hero__imagen img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* BOTONES */
+.btn-primario,
+.btn-secundario {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.btn-primario {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+.btn-primario:hover {
+    background-color: #1f2937;
+}
+
+.btn-secundario {
+    background-color: #facc15;
+    color: #111827;
+}
+
+.btn-secundario:hover {
+    background-color: #eab308;
+}
+
+/* SECCIONES GENERALES */
+.seccion {
+    padding: 2.5rem 0;
+    background-color: #f7f7f7;
+}
+
+.seccion--gris {
+    background-color: #e5e7eb;
+}
+
+.seccion--oscura {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+.seccion__titulo {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.seccion__descripcion {
+    font-size: 0.95rem;
+    max-width: 36rem;
+    margin-bottom: 1.5rem;
+}
+
+/* GRID GENERAL */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* TARJETAS */
+.tarjeta {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* evita deformaciones */
+}
+
+.tarjeta__contenido {
+    padding: 0.9rem 1rem 1rem;
+}
+
+.tarjeta__contenido h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.tarjeta__contenido p {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.tarjeta--simple {
+    text-align: center;
+}
+
+.tarjeta--simple h3 {
+    padding: 0.75rem 0 1rem;
+}
+
+/* SERVICIOS DE DISEÑO */
+.servicios__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.lista {
+    list-style: disc;
+    padding-left: 1.3rem;
+    font-size: 0.95rem;
+}
+
+.lista li {
+    margin-bottom: 0.3rem;
+}
+
+.servicios__imagenes {
+    display: grid;
+    gap: 1rem;
+}
+
+.servicios__item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.servicios__item figcaption {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-top: 0.35rem;
+}
+
+/* CONTACTO */
+.contacto__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.contacto__contenido p {
+    max-width: 32rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #020617;
+    color: #9ca3af;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+}
+
+.footer__contenido {
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero__grid,
+    .servicios__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__imagen img {
+        height: 220px;
+    }
+
+    .grid--3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contacto__contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .header__contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        justify-content: flex-start;
+    }
+
+    .hero__grid {
+        gap: 1.5rem;
+    }
+
+    .grid,
+    .grid--3 {
+        grid-template-columns: 1fr;
+    }
+}
