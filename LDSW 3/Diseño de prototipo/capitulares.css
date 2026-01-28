@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 40px;
+}
+
+/* Contenedor principal */
+.texto{
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.8;
+    color: #2c3e50;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Capitular */
+.capitular{
+    float: left;              /* propiedad float */
+    font-size: 80px;
+    line-height: 70px;
+    padding-right: 12px;
+    padding-top: 6px;
+    font-weight: bold;
+    color: #1a5276;
+}
+
+/* Párrafos */
+.texto p{
+    margin-bottom: 15px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alta de Usuario - Validación con DOM</title>
+</head>
+<body style="font-family: Arial, sans-serif; background:#f4f6f8; padding:24px;">
+
+    <div style="max-width: 850px; margin: 0 auto; background: #fff; padding: 22px; border-radius: 10px;">
+    <h1 style="margin-top:0;">Formulario: Alta de Usuario</h1>
+    <p style="margin-top:0; color:#444;">
+        Completa los campos. Al presionar el botón se validará del lado del cliente (sin enviar al servidor).
+    </p>
+
+    <form id="frmAltaUsuario" autocomplete="off">
+
+        <div style="margin-bottom:14px;">
+        <label id="lblNombre" for="txtNombre" style="display:block; font-weight:600;">
+            Nombre completo
+        </label>
+        <input id="txtNombre" type="text" placeholder="Ej. Francisco Ochoa"
+                style="width:100%; padding:10px; border:1px solid #bbb; border-radius:8px;" />
+        <small id="msgNombre" style="display:block; margin-top:6px; color:#666;"></small>
+        </div>
+
+        <div style="margin-bottom:14px;">
+        <label id="lblCorreo" for="txtCorreo" style="display:block; font-weight:600;">
+            Correo electrónico
+        </label>
+        <input id="txtCorreo" type="text" placeholder="Ej. correo@dominio.com"
+                style="width:100%; padding:10px; border:1px solid #bbb; border-radius:8px;" />
+        <small id="msgCorreo" style="display:block; margin-top:6px; color:#666;"></small>
+        </div>
+
+        <div style="margin-bottom:14px;">
+        <label id="lblTelefono" for="txtTelefono" style="display:block; font-weight:600;">
+            Teléfono (10 dígitos)
+        </label>
+        <input id="txtTelefono" type="text" placeholder="Ej. 3312345678"
+                style="width:100%; padding:10px; border:1px solid #bbb; border-radius:8px;" />
+        <small id="msgTelefono" style="display:block; margin-top:6px; color:#666;"></small>
+        </div>
+
+        <fieldset id="fsIntereses" style="margin-bottom:14px; border:1px solid #ddd; border-radius:10px; padding:14px;">
+        <legend id="lblIntereses" style="font-weight:700;">Intereses (elige al menos 1)</legend>
+
+        <label style="display:block; margin:6px 0;">
+            <input type="checkbox" name="intereses" value="promociones"> Promociones
+        </label>
+        <label style="display:block; margin:6px 0;">
+            <input type="checkbox" name="intereses" value="novedades"> Novedades
+        </label>
+        <label style="display:block; margin:6px 0;">
+            <input type="checkbox" name="intereses" value="capacitaciones"> Capacitaciones
+        </label>
+        <label style="display:block; margin:6px 0;">
+            <input type="checkbox" name="intereses" value="soporte"> Soporte
+        </label>
+        <label style="display:block; margin:6px 0;">
+            <input type="checkbox" name="intereses" value="eventos"> Eventos
+        </label>
+
+        <small id="msgIntereses" style="display:block; margin-top:8px; color:#666;"></small>
+        </fieldset>
+
+        <button id="btnValidar" type="button"
+                style="padding:12px 18px; border:none; border-radius:10px; cursor:pointer; font-weight:700;">
+        Validar registro
+        </button>
+
+        <div id="resultado" style="margin-top:14px; font-weight:700;"></div>
+    </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
