@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú responsivo con hamburguesa</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor-header">
+            <div class="logo">MENÚ</div>
+
+            <nav>
+                <!-- Checkbox para controlar el menú en móvil -->
+                <input type="checkbox" id="menu-toggle">
+
+                <!-- Ícono de hamburguesa -->
+                <label for="menu-toggle" class="hamburguesa" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Menú con 4 vínculos -->
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Ejemplo de menú responsivo con ícono de hamburguesa</h1>
+        <p>
+            Este es un ejemplo sencillo de un menú de navegación que se adapta a pantallas pequeñas utilizando diseño responsivo (media queries) 
+            y un ícono de menú hamburguesa.
+        </p>
+
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Contenido de ejemplo para la sección Inicio.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Contenido de ejemplo para la sección Servicios.</p>
+        </section>
+
+        <section id="portafolio">
+            <h2>Portafolio</h2>
+            <p>Contenido de ejemplo para la sección Portafolio.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Contenido de ejemplo para la sección Contacto.</p>
+        </section>
+    </main>
+
+</body>
+</html>
