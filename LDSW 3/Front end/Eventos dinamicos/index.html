@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alta de Usuario + Catálogo Dinámico</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="container">
+    <section class="panel">
+        <header class="header">
+        <h1>Alta de Usuario</h1>
+        <p>Valida el formulario y genera registros dinámicos sin recargar la página.</p>
+        </header>
+
+        <form id="frmAltaUsuario" class="form" autocomplete="off">
+        <div class="field">
+            <label id="lblNombre" for="txtNombre">Nombre completo</label>
+            <input id="txtNombre" type="text" placeholder="Ej. Francisco Ochoa" />
+            <small id="msgNombre" class="help"></small>
+        </div>
+
+        <div class="field">
+            <label id="lblCorreo" for="txtCorreo">Correo electrónico</label>
+            <input id="txtCorreo" type="text" placeholder="Ej. correo@dominio.com" />
+            <small id="msgCorreo" class="help"></small>
+        </div>
+
+        <div class="field">
+            <label id="lblTelefono" for="txtTelefono">Teléfono (10 dígitos)</label>
+            <input id="txtTelefono" type="text" placeholder="Ej. 3312345678" />
+            <small id="msgTelefono" class="help"></small>
+        </div>
+
+        <fieldset id="fsIntereses" class="fieldset">
+            <legend id="lblIntereses">Intereses (elige al menos 1)</legend>
+
+            <label class="chk">
+            <input type="checkbox" name="intereses" value="Promociones"> Promociones
+            </label>
+            <label class="chk">
+            <input type="checkbox" name="intereses" value="Novedades"> Novedades
+            </label>
+            <label class="chk">
+            <input type="checkbox" name="intereses" value="Capacitaciones"> Capacitaciones
+            </label>
+            <label class="chk">
+            <input type="checkbox" name="intereses" value="Soporte"> Soporte
+            </label>
+            <label class="chk">
+            <input type="checkbox" name="intereses" value="Eventos"> Eventos
+            </label>
+
+            <small id="msgIntereses" class="help"></small>
+        </fieldset>
+
+        <div class="actions">
+            <button id="btnValidar" type="button" class="btn btn-primary">
+            Validar y agregar al catálogo
+            </button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+        </form>
+
+        <hr class="divider" />
+
+        <section class="catalogo-section">
+        <div class="catalogo-head">
+            <h2>Catálogo de registros</h2>
+
+            <button id="btnVaciar" type="button" class="btn btn-danger" title="Eliminar todos los registros">
+            Vaciar catálogo
+            </button>
+            </div>
+
+            <div id="catalogo" class="catalogo"></div>
+        </section>
+    </section>
+    </main>
+
+    <script src="catalogo.js"></script>
+</body>
+</html>
